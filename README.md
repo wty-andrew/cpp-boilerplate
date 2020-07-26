@@ -2,8 +2,6 @@
 ## Required
 - C++ 17
 - CMake 3.12
-## Optional
-- GoogleTest/GoogleMock (for testing)
 
 # Building
 Using Make:
@@ -25,11 +23,7 @@ ninja
 
 # Run Tests
 ```bash
-cd build/tests
-./runTests
-```
-or
-```bash
 cd build
 ctest
 ```
+or run each single test executable in build/tests folder

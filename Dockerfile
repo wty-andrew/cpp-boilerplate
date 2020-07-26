@@ -1,7 +1,7 @@
 FROM gcc:latest
 
 RUN apt-get update && apt-get -y upgrade
-RUN apt-get install -y cmake libgtest-dev libgmock-dev
+RUN apt-get install -y cmake
 
 ARG PROJECT=myapp
 

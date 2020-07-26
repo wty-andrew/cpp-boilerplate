@@ -15,8 +15,6 @@ set(CMAKE_CXX_FLAGS "-Wall")
 # Libraries
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 
-find_package(Threads REQUIRED)
-
 include_directories(
   ${PROJECT_SOURCE_DIR}/include
 )

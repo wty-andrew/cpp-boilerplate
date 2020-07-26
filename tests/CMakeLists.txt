@@ -1,18 +1,12 @@
-find_package(GTest REQUIRED)
-find_package(GMock REQUIRED)
-
 include_directories(
   ${PROJECT_SOURCE_DIR}/tests/include
-  ${GTEST_INCLUDE_DIRS}
-  ${GMOCK_INCLUDE_DIRS}
 )
 
-add_executable(runTests tests.cpp test_foo.cpp)
-target_link_libraries(runTests
+add_library(test_main OBJECT test_main.cpp)
+
+add_executable(test_foo test_foo.cpp)
+target_link_libraries(test_foo
   ${PROJECT_LIBRARY}
-  ${GTEST_BOTH_LIBRARIES}
-  ${GMOCK_BOTH_LIBRARIES}
-  Threads::Threads
+  test_main
 )
-
-gtest_discover_tests(runTests)
+add_test(NAME test_foo COMMAND test_foo)

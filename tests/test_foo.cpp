@@ -4,7 +4,7 @@
 
 using namespace testing;
 
-class FooTest: public Test {
+class FooTest : public Test {
 public:
   int some_value = 10;
 };

@@ -1,7 +1,9 @@
 # Dependencies
 ## Required
-- C++ 17
-- CMake 3.12
+- C++ 20
+- CMake 3.22
+- Qt 6
+
 ## Optional
 - GoogleTest/GoogleMock (for testing)
 

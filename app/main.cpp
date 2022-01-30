@@ -1,6 +1,10 @@
-#include <iostream>
+#include <QCoreApplication>
+#include <QDebug>
 
 int main(int argc, char** argv) {
-  std::cout << "Hello World!" << std::endl;
-  return 0;
+  QCoreApplication app(argc, argv);
+
+  qInfo() << "Hello World!";
+
+  return app.exec();
 }
